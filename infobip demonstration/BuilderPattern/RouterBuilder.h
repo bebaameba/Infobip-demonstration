@@ -26,7 +26,7 @@ public:
     }
 
     UserEquipment* getResult() const override {
-        std::cout << "Builder was successful for Router\n";
+        std::cout << std::endl << "Builder was successful for Router\n";
         return new Router(name, mbUsed);
     }
 

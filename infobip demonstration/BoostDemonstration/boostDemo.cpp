@@ -49,14 +49,14 @@ void runBoostDemonstration() {
     boost::any anyRouter = router;
 
     // Display information
-    std::cout << "Displaying information using Boost.Optional:\n";
+    std::cout << std::endl <<"Displaying information using Boost.Optional:\n";
     mobilePhone.displayInfo();
 
-    std::cout << "\nDisplaying information using Boost.Variant:\n";
+    std::cout << std::endl  << "\nDisplaying information using Boost.Variant:\n";
     displayVariantInfo(variantMobilePhone);
     displayVariantInfo(variantRouter);
 
-    std::cout << "\nDisplaying information using Boost.Any:\n";
+    std::cout << std::endl << "\nDisplaying information using Boost.Any:\n";
     displayAnyInfo(anyMobilePhone);
     displayAnyInfo(anyRouter);
 }

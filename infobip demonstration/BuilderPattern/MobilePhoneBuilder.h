@@ -28,7 +28,7 @@ public:
     }
 
     UserEquipment* getResult() const override {
-        std::cout << "Builder was successful for MobilePhone\n";
+        std::cout << std::endl << "Builder was successful for MobilePhone\n";
         return new MobilePhone(name, phoneType, mbInternet, minutes);
     }
 };

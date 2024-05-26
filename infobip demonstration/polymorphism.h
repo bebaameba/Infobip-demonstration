@@ -24,6 +24,7 @@ public:
     virtual ~UserEquipment();
 
     virtual void displayInfo() const = 0;
+    
 
 protected:
     std::string getName() const;

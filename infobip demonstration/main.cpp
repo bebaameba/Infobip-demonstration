@@ -4,6 +4,7 @@
 #include "AdapterPattern/MobilePhoneAdapter.h"
 #include "AdapterPattern/RouterAdapter.h"
 #include "BoostDemonstration/boostDemo.h"
+#include "SmartPointers/SmartPointersDemo.h"
 
 int main() {
     // Using Builder Pattern
@@ -55,7 +56,10 @@ int main() {
 
     // boost demo 
     runBoostDemonstration();
-
+    std::cout << std::endl;
+    
+    // smart pointers demo 
+    demonstrateSmartPointers();
     std::cout << std::endl;
 
     return 0;

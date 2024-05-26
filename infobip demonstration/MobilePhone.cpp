@@ -9,7 +9,7 @@ MobilePhone::MobilePhone(const std::string& deviceName, PhoneType type, double m
 // MobilePhone copy constructor
 MobilePhone::MobilePhone(const MobilePhone& other)
     : UserEquipment(other), phoneType(other.phoneType), mbOfInternetAvailable(other.mbOfInternetAvailable), minutesAvailable(other.minutesAvailable) {
-    std::cout << "MobilePhone copy constructed\n";
+    std::cout << "MobilePhone copy constructor used successfully\n";
 }
 
 // MobilePhone move constructor
@@ -17,7 +17,7 @@ MobilePhone::MobilePhone(MobilePhone&& other) noexcept
     : UserEquipment(std::move(other)), phoneType(other.phoneType), mbOfInternetAvailable(other.mbOfInternetAvailable), minutesAvailable(other.minutesAvailable) {
     other.mbOfInternetAvailable = 0;
     other.minutesAvailable = 0;
-    std::cout << "MobilePhone move constructed\n";
+    std::cout << "MobilePhone move constructor used successfully\n";
 }
 
 // MobilePhone copy assignment operator
